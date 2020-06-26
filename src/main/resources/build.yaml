@@ -27,6 +27,8 @@ items:
         name: 'hello-openshift:latest'
     strategy:
       type: Docker
+      dockerStrategy:
+        dockerfilePath: src/Dockerfile      
     source:
       type: Git
       git:
